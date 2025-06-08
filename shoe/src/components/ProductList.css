@@ -1,0 +1,66 @@
+/* ProductList.css */
+
+.product-list {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.product-list h2 {
+  margin-top: 0;
+  color: #0077cc;
+  margin-bottom: 15px;
+}
+
+.product-list .empty-text {
+  color: #777;
+}
+
+.product-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-table-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 100px 100px 100px; /* 6 columns */
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.product-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 100px 100px 100px; /* match header */
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  gap: 10px;
+  text-align: center;
+}
+
+.product-row button {
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.product-row button.active {
+  background-color: #28a745;
+  color: white;
+}
+
+.product-row button.disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
